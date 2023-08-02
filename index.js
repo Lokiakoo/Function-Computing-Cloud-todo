@@ -50,6 +50,7 @@ exports.handler = (req, resp, context) => {
             resp.send(JSON.stringify({ 'code': 400, 'body': 'Bad request' }))
             break
         }
+        break
       default:
         //Any unfriendly access to the API should return suitable JSON message.
         resp.send(JSON.stringify({ 'code': 400, 'body': 'Bad requset' }))
